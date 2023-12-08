@@ -71,7 +71,7 @@
     }
 
     interface logostyle {
-        style: string[];
+        style: string|string[];
         
         // Add other properties as needed
     
