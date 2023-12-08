@@ -70,4 +70,11 @@
         // Add other properties as needed
     }
 
-  export type { moviePoster, TrendingNow, TopRated, ActionMovies, ComedyMovies, HorrorMovies, RomanceMovies, Documentaries, content };
+    interface logostyle {
+        style: string[];
+        
+        // Add other properties as needed
+    
+    }
+
+  export type { moviePoster, TrendingNow, TopRated, ActionMovies, ComedyMovies, HorrorMovies, RomanceMovies, Documentaries, content, logostyle };
