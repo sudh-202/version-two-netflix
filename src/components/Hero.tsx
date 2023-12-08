@@ -1,8 +1,9 @@
 import React from 'react'
 import MovieDetails from './MovieDetails'
+import { moviePoster } from '@/pages/types'
 import { useState, useEffect } from 'react'
 
-const Hero = ({ moviePosters }) => {
+const Hero = ({ moviePosters }: { moviePosters: moviePoster[] }) => {
     const [movie, setMovie] = useState(null)
     const [trailer, setTrailer] = useState("");
     const [showPlayer, setShowPlayer] = useState(false);
@@ -20,7 +21,7 @@ const Hero = ({ moviePosters }) => {
             console.log(`data::: `, data);
     
             const trailerIndex = data.videos.results.findIndex(
-              (element) => element.type === "Trailer"
+              (element: { type: string }) => element.type === "Trailer"
             );
     
             const trailerURL = `https://www.youtube.com/watch?v=${data.videos?.results[trailerIndex]?.key}`;
