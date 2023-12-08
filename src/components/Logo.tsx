@@ -1,6 +1,9 @@
-const Logo = ({ style }) => {
+import {logostyle} from '@/pages/types'
+import React from 'react'
+
+const Logo : React.FunctionComponent<logostyle > = ({ style }) => {
     return (
-      <svg className={style} viewBox="0 0 111 30" fill="#e50914">
+      <svg className={style.join(' ')} viewBox="0 0 111 30" fill="#e50914">
         <path
           d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,
         29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,
