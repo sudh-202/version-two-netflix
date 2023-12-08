@@ -4,9 +4,10 @@ import { moviePoster } from '@/pages/types'
 import { useState, useEffect } from 'react'
 
 const Hero = ({ moviePosters }: { moviePosters: moviePoster[] }) => {
-    const [movie, setMovie] = useState(null)
-    const [trailer, setTrailer] = useState("");
-    const [showPlayer, setShowPlayer] = useState(false);
+  const [movie, setMovie] = useState<moviePoster | null>(null);
+  const [trailer, setTrailer] = useState<string>("");
+  const [showPlayer, setShowPlayer] = useState<boolean>(false);
+
 
     useEffect(() => {
       // Check if moviePosters is defined and has a length greater than 0
