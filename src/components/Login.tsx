@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <>
 <div className='login_bg_gradient bg-cover h-screen grid place-items-center'>
-      <Logo style="w-20 md:w-40 absolute top-0 left-0 m-8"/>
+      <Logo style={['w-20', 'md:w-40', 'absolute', 'top-0', 'left-0', 'm-8']}/>
       <div className='md:flex md:flex-col items-center md:justify-center md:px-32 '>
       <h3 className='text-lg md:text-3xl font-semibold pt-24 text-center pr-2'>Welcome back!</h3>
       <h1 className=' text-4xl md:text-7xl md:leading-[100px] text-center font-bold pr-4'>The biggest Indian hits. The best Indian stories. All streaming here.</h1>
